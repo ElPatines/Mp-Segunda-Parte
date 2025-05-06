@@ -1,0 +1,32 @@
+HunterFactory, VampireFactory y LycanthropeFactory pasa a CharacterFactory
+    Todas:
+-Todos los objetos que muestran algo por pantalla reciben una funcion limpiar consola para que cada vez que quiera mostrar algo 
+la pantalla se resetee
+
+    Admin:
+-Admin se le añaden los atributos blockList y unBlockList que son una lista de listas de juagdores
+-Admin recibe 4 nuevas funciones todas relaccionadas con sus  nuevos atributos
+
+    System:
+-Cambio de nombre para no tener problemas con la propia clase System de java
+-Añadi la funcion getUser sin contraseña
+-NewPlayer y NewAdmin no devuelven un user sino un Player y un Admin
+-Pantallas nuevas en vez de selecOption
+-Nueva funcion para leer la informacion del perfil
+
+    Adapter:
+-Nada
+
+    Credentials
+-Se le quitan sus atributos y se le añade un System
+-Se mantiene validateUser pero en vez de devolver un boolean manda un String con el nuevo codigo de juagdores
+-Valida que el nombre y la contraseña esten bien
+
+    Game:
+-Se borra bluck y unblock user porque no hacen nada ahi
+
+    Battle:
+-Se le añade el atributo hora
+
+    User:
+-Se le borra el atributo Credential
